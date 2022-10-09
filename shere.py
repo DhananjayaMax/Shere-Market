@@ -2,18 +2,22 @@ import os
 import sys
 from time import sleep
 
-f=""" 
-   _____ __  ____________  ______         
-  / ___// / / / ____/ __ \/ ____/         
-  \__ \/ /_/ / __/ / /_/ / __/            
- ___/ / __  / /___/ _, _/ /___            
-/____/_/_/_/_____/_/_|_/_____/____________
-   /  |/  /   |  / __ \/ //_// ____/_  __/
-  / /|_/ / /| | / /_/ / ,<  / __/   / /   
- / /  / / ___ |/ _, _/ /| |/ /___  / /    
-/_/  /_/_/  |_/_/ |_/_/ |_/_____/ /_/     
-                                          
-"""
+f="""\33[91m 
+░██████╗██╗░░██╗███████╗██████╗░███████╗
+██╔════╝██║░░██║██╔════╝██╔══██╗██╔════╝
+╚█████╗░███████║█████╗░░██████╔╝█████╗░░
+░╚═══██╗██╔══██║██╔══╝░░██╔══██╗██╔══╝░░
+██████╔╝██║░░██║███████╗██║░░██║███████╗
+╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝
+
+
+███╗░░░███╗░█████╗░██████╗░██╗░░██╗███████╗████████╗
+████╗░████║██╔══██╗██╔══██╗██║░██╔╝██╔════╝╚══██╔══╝
+██╔████╔██║███████║██████╔╝█████═╝░█████╗░░░░░██║░░░
+██║╚██╔╝██║██╔══██║██╔══██╗██╔═██╗░██╔══╝░░░░░██║░░░
+██║░╚═╝░██║██║░░██║██║░░██║██║░╚██╗███████╗░░░██║░░░
+╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝░░░╚═╝░░░"""
+
 
 def b():
   os.system('clear')
@@ -22,29 +26,34 @@ def b():
     sys.stdout.flush()
     sleep(0.002)
 def main():
-   inw=float(input("Enter Your Invesment Money : "))
    print ("")
-   sh=float(input("price Of shere  : "))
    print ("")
-   ib=float(input("Enter The Profitable Amount : "))
+   print ("")
+   inw=float(input("\33[91m[\33[93m+\33[91m]\33[95m Enter Your Invesment Money : \33[93mRs -> \33[92m "))
+   print ("")
+   sh=float(input("\33[91m[\33[93m+\33[91m]\33[95mprice Of shere  : \33[93mRs -> \33[92m "))
+   print ("")
+   ib=float(input("\33[91m[\33[93m+\33[91m]\33[95m Enter The Profitable Amount : \33[93mRs -> \33[92m "))
    print ("")
    k=inw/sh
-   print ("Number Of Shere Is : ",k)
+   print ("\33[91m[\33[93m+\33[91m]\33[95m Number Of Shere Is : \33[93mRs -> \33[92m ",k)
    p=k*ib
-   print ("Profitble Money Is : ",p)
-   z=float(input("Enter The Sale Price Of Shere : "))
+   print ("")
+   print ("\33[91m[\33[93m+\33[91m]\33[95m Profitble Money Is : \33[93mRs -> \33[92m ",p)
+   print ("")
+   z=float(input("\33[91m[\33[93m+\33[91m]\33[95m Enter The Sale Price Of Shere : \33[93mRs -> \33[92m "))
    print ("")
    d=z-sh
    j=d*k
-   print ("Capital Profit Is : ",j)
+   print ("\33[91m[\33[93m+\33[91m]\33[95m Capital Profit Is : \33[93mRs -> \33[92m ",j)
    print ("")
    l=j/inw
    o=l*100
-   print ("Precentage Of Capital Profit  \n \t\t out of inwesment : ",o)
+   print ("\33[91m[\33[93m+\33[91m]\33[95m Precentage Of Capital Profit  \n \t\t out of inwesment :\33[91m ",o,"\33[93m%")
    print ("")
    q=p/inw
    u=q*100
-   print ("Precentage of profitable Money \n\t\t out of inwesment : ",u)
+   print ("\33[91m[\33[93m+\33[91m]\33[95m Precentage of profitable Money \n\t\t out of inwesment \33[91m: ",u,"\33[93m%")
    print ("")
 b()
 main()
