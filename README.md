@@ -8,10 +8,12 @@
 * `pkg install python -y`
 * `pkg install python2 -y`
 * `pkg install git -y`
-* `git clone https://github.com/DhananjayaMax/Shere-Market`
+```
+git clone https://github.com/DhananjayaMax/Shere-Market
+```
 * `cd $HOME`
 * `ls`
-* `cd grabcam`
+* `cd Shere-Market`
 * `ls`
-* `bash grabcam.sh`
+* `python shere.py`
 ```
